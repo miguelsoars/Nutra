@@ -7,7 +7,7 @@ import {defineConfig, loadEnv} from 'vite';
 // - GitHub Pages serves your app from a subpath: https://<user>.github.io/<repo>/
 // - So we set `base` to '/<repo>/' in production builds.
 // - For local dev, keep it as '/'.
-const GITHUB_REPO_NAME = 'NutraScan-App';
+const GITHUB_REPO_NAME = 'Nutra';
 
 export default defineConfig(({mode}) => {
   const env = loadEnv(mode, '.', '');
