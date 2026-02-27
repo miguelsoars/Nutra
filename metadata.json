@@ -1,0 +1,7 @@
+{
+  "name": "Remix: NutraScan™",
+  "description": "Análise nutricional inteligente por imagem e diário alimentar com IA.",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}

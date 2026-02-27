@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  body {
+    @apply font-sans antialiased bg-[#F2F2F7] text-[#1C1C1E];
+    -webkit-tap-highlight-color: transparent;
+  }
+}
+
+.ios-blur {
+  backdrop-filter: blur(25px) saturate(180%);
+  -webkit-backdrop-filter: blur(25px) saturate(180%);
+}
+
+.ios-card {
+  @apply bg-white rounded-[12px] shadow-[0_1px_4px_rgba(0,0,0,0.02)] border-none;
+}
+
+.ios-button-primary {
+  @apply bg-black text-white rounded-[8px] font-bold active:scale-[0.96] transition-all duration-200;
+}
+
+.ios-button-secondary {
+  @apply bg-[#E5E5EA] text-[#1C1C1E] rounded-[8px] font-bold active:scale-[0.96] transition-all duration-200;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
